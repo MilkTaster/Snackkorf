@@ -94,16 +94,16 @@ a {
 }
 
 .brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.4rem;
-  color: white;
-  background: linear-gradient(135deg, var(--red), var(--blue));
-  box-shadow: 0 14px 30px rgba(23, 58, 138, 0.22);
+    /* Removed background gradient */
+    display: flex;
+    align-items: center;
+}
+
+.brand-mark img {
+    height: auto;
+    max-width: 100%; /* Ensure image is responsive */
+    width: 50px; /* Adjust size as necessary */
+    margin-right: 10px; /* Space between image and text */
 }
 
 .nav-links {
